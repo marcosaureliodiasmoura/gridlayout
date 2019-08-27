@@ -1,0 +1,46 @@
+/* resetar o body e o html */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing border-box;
+    background: #7159C1;
+  }
+
+  /* definindo os tamanhos pra cada estrutura */
+  header {
+    background: yellow;
+    grid-area: h;
+  }
+
+  main {
+    background: blue;
+    grid-area: m;
+  }
+
+  aside {
+    background: green;
+    grid-area: a;
+  }
+
+  footer {
+    background: red;
+    grid-area: f;
+  }
+
+/* iniciando o grid */
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh;
+  grid-template-areas: "h h"
+                       "m a"
+                       "f f"
+  
+/*   realiza espaçamento
+  primeiro é espaçamento no row 20px
+  segundo é espaçamento no column 50px */
+/*   grid-gap: 20px 50px; */
+  
+  
+  
